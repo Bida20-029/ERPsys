@@ -1,0 +1,15 @@
+{% block content %}
+  <h2>Leave Requests</h2>
+  <ul>
+    {% for leave_request in leave_requests %}
+      <li>
+        {{ leave_request }}
+        {% if request.user.is_staff and leave_request.confirmation_status == 'P' %}
+          <a href="{% url 'confirm_leave_request' leave_request.id %}">Confirm</a>
+        {% endif %}
+      </li>
+    {% empty %}
+    <li>No leave requests.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

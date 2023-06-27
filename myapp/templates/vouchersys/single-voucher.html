@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>{{voucher.Detail}}</h1>
+<br>
+<p>
+   ID_NUMBER: {{voucher.ID_no}}
+   <br>
+    CONTACT: {{voucher.Contact}}
+    <br>
+    VOUCHER: {{voucher.Voucher}}
+    <br>
+    UNI HYBRID: {{voucher.Uni_Hybrid}}
+    <br>
+    COLLECTED BY: {{voucher.Collected_by}}
+    <br>
+    ID NUMBER: {{voucher.ID_no}}
+    <br>
+    SIGNATURE: {{voucher.Sign}}
+    <br>
+    DATE: {{voucher.Date}}
+</p>
+<br>
+    {% for tag in voucher.tags.all %}
+    <span style="border:2px solid aqua; padding: 2px; margin: 2px;">
+        {{tag}}
+    </span>
+
+    {% endfor %}
+
+{% endblock content %}

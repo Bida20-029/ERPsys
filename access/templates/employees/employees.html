@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal Systems Page</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/test.css">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            margin-top: 60px;
+            margin-left: 1.15%;
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        body{
+            width: 95%;
+            height: 100%;
+            overflow:hidden;
+            background-color: #f2f2f2;
+            margin-top: 0;
+            padding: 0;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: #f2f2f2;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar-toggle {
+            display: none;
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .sidebar-toggle span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+          
+        .sidebar-toggle span:first-child {
+            transform-origin: top left;
+        }
+          
+        .sidebar-toggle span:last-child {
+            transform-origin: bottom left;
+        }
+          
+        .sidebar.active {
+            left: 0;
+        }
+          
+        .sidebar.active .sidebar-toggle span:first-child {
+            transform: rotate(45deg);
+            margin-top: 10px;
+        }
+          
+        .sidebar.active .sidebar-toggle span:nth-child(2) {
+            transform: scaleX(0);
+        }
+          
+        .sidebar.active .sidebar-toggle span:last-child {
+            transform: rotate(-45deg);
+            margin-bottom: 10px;
+        }
+          
+        @media (max-width: 768px) {
+            .sidebar {
+              left: -300px;
+        }
+            
+        .sidebar.active {
+              left: 0;
+        }
+            
+        .sidebar-toggle {
+              display: block;
+        }
+            
+        ul {
+              margin-top: 50px;
+            }
+        }
+        .content {
+            width: 75%;
+            padding: 20px;
+            margin-top: 10%;
+        }
+        .logo{
+            width: 200px;
+            height: 90px;
+            margin-bottom: 20px;
+        }
+        .section{
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 100%;
+            position: fixed;
+            margin-top: 5%;
+        }
+        .navbar{
+            width: 95%;
+            height: 15%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2vw 1.4vw;
+            z-index: 1000;
+            margin-left: 5%;
+            top: 2.5%;
+            background-color: rgb(255, 255, 255);
+        }
+        .menuitems{
+            display: flex;
+            margin: auto 0;
+        }
+        .menuitems li{
+            list-style: none;
+            margin: 0 1.5vw;
+        }
+        .menuitems li a{
+            display: block;
+            color: rgb(127, 34, 34);
+            font-size: 1.0vw;
+            letter-spacing: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .menuitems li:hover a{
+            color: green;
+        }
+        .content h1{
+            text-decoration: rgb(127, 34, 34);
+        }
+        h5{
+            margin-top: 10%;
+            margin-left: 4%;
+            font-size: 40px;
+            color:rgb(136, 46, 46);
+            letter-spacing: 1.5px;
+        }
+        h1{
+            margin-top: 1%;
+            margin-left: 8%;
+            font-size: 20px;
+            color: green;
+            padding: 0;
+        }
+        .box{
+            width: 250px;
+            height: 300px;
+            padding: 50px;
+            overflow: hidden;
+            border-radius: 14px;
+            background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            box-shadow: 8px 8px 16px #d1d1d1,
+                        -8px -8px 16px #ffffff;
+            cursor: pointer;
+        }
+        .box:hover{
+            background: linear-gradient(145deg, rgb(140, 30, 30), #943c3c);
+            box-shadow: 8px 8px 16px #d1d1d1,
+                        -8px -8px 16px #ffffff;
+        }
+        .icons{
+            font-size: 50px;
+            color: #ff3366;
+            margin-top: 10px;
+        }
+        .box:hover .icons{
+            margin-top: 0px;
+            color: #fff;
+        }
+        .box h2{
+            font-weight: 500;
+            margin-top: 25px;
+        }
+        .box:hover h2{
+            color: #fff;
+        }
+        .box p{
+            color: grey;
+            font-weight: 400;
+            margin-top: 25px;
+        }
+        .box:hover p{
+            color: #fff;
+        }
+        .box button{
+            background-color: rgb(255, 255, 255);
+            font-size: 14px;
+            padding-top: 10px 20px;
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 style="align-items: left;">INTERNAL OPERATIONS PAGE</h1>
+            <ol class="menuitems">
+                <li><a href="{% url 'main' %}">BATLA Schemes</a></li>
+                <li><a href="{% url 'logout'%}">Logout</a></li>
+            </ol>
+        </div>
+    </div>
+ <h5>BATLA Internal System</h5> 
+ <h1> Land | Prosperity | Harmony </h1>
+ <div class="container">
+    <div class="box">
+        <ion-icon name="book-outline"></ion-icon>
+        <h3>LEAVE APPLICATIONS</h3>
+
+        <p>In order to apply for leave, click on the link below.</p>
+        <a href="{% url 'create-leave' %}"><button class="align-center">Submit here</button></a>
+    </div>
+    <div class="box">
+        <ion-icon name="phone-outline"></ion-icon>
+        <h2>PAYMENT VOUCHERS</h2>
+        
+        <p>In order to add a payment voucher, download the payment voucher application form provided below, fill it in and use the submit button to hand in the form.</p>
+        <a href="{% url 'pdf-payment' %}"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-payment' %}"><button class="align-center">Submit here</button></a>
+    </div>
+    <div class="box">
+        <ion-icon name="bank-outline"></ion-icon>
+        <h2>PETTY CASH</h2>
+        <p>In order to Add a petty cash reciept, use the following links:</p>
+        <a href="{% url 'create-petty' %}"><button class="align-center">Submit here</button></a>
+    </div>
+    <sript type="module" src="https://unpkg.com/ionicons5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ </div>
+</body>
+</html>

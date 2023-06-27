@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="n0-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>          <html class="n0-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>          <html class="n0-js lt-ie9"> <![endif]-->
+<!--[if gt IE 7]>       <html class="n0-js"> <![endif]-->
+{% load static %}
+<html>
+
+{% block content %}
+                    
+{% endblock content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-AU-Compatible" content="IE-edge">
+    <title>Employee page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css">
+</head>
+<header>
+    {% include 'nav.html' %}
+</header>
+<br>
+<body style="background-color: lightslategray; margin-left:25px; margin-right:25px">
+    <div>
+        <h1 style="font-size:50px; font:tahoma; color:brown; font-style:italic; font-weight:bold; text-align:center;">BATLA Employee page</h1>
+    </div>
+    <div>
+        <H2>LEAVE FORMS</H2>
+        <br>
+        <p style="font:tahoma; font-size:15px;">If you wish to apply for leave, please utilize the links below: 
+            <a href="{{ MEDIA_URL }}#"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-employee' %}"><button class="align-center">Submit here</button></a></p>
+        <br>
+        <h2>PAYMENT VOUCHERS</H2> 
+        <p style="font:tahoma; font-size:15px;">If you need to fill a payment voucher, utilize the links below
+            <a href="{{ MEDIA_URL }}#"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-payment' %}"><button class="align-center">Submit here</button></a>
+        <br>
+        <p style="font:tahoma; font-size:15px;">If you want access to a BATLA members' information, click on this <a href = "{% url 'members' %}">link</a></p>
+        <!--[if lt IE ]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="a"> 
+                <![endif]-->
+                <script src="" async defer></script>
+            </div>
+</body>
+</html>

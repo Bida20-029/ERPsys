@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+body{
+    background: white;
+}
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+.text_content{
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+.text_content h2{
+    font-family: 'Trebuchet MS';
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 10vw;
+    text-transform: capitalize;
+    color: #259135;
+}
+.text_content p{
+    font-size: 1vw;
+    font-weight: 400;
+    color: black;
+    margin-top: 30px;
+}
+.text_content h2::first-line{
+    color:#1f7d64;
+    letter-spacing: 5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.image_container{
+    display: flex;
+    width:30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.imgbox{
+    position: relative;
+    min-width: 80vh;
+    min-height: 10vh;
+    margin-right: 50vw;
+    margin-top: 8vw;
+}
+.imgbox img{
+    height: 140%;
+    width: 80%;
+    object-fit: cover;
+}
+.icons{
+    position: fixed;
+    top: 50%;
+    right: 15vw;
+    transform: translateY(-50);
+    z-index: 1000;
+}
+.icons .fa{
+    width: 20vw;
+    padding: 1vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+    background: #fff;
+    transition: o.5s ease;
+}
+.icons .fa span{
+    position: relative;
+    font-size: 1.8vw;
+    bottom: 0.3vw;
+    margin-left: 2.8vw; 
+}
+.container section{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    width: 100%;
+    position: relative
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 6vw;
+    background: rgba(86, 110, 134, 0.726);
+    z-index: 1000;
+}
+.menuitems{
+    display: flex;
+    margin: auto 0;
+}
+.menuitems li{
+    list-style: none;
+    margin: 0 1.5vw;
+}
+.menuitems li a{
+    display: block;
+    color: #fff;
+    font-size: 1.0vw;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menuitems li:hover a{
+    color: green;
+}
+
+.container section:nth-child(2){
+    background: rgb(211, 204, 204);
+}
+.container section:nth-child(3){
+    background: lightslategray;
+}
+.container section:nth-child(4){
+    background: lightslategray;
+}
+.container section .content{
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+.container section .content h2{
+    font-family: 'Trebuchet MS';
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: 10vw;
+    text-transform: capitalize;
+    color: #111;
+}
+.container section .content p{
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #111
+}
+@media (max-width: 991px){
+    .container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+}
+span{
+    color: rgba(37, 161, 142, 0.548);
+}
+.login-box{
+    background: rgba(86, 110, 134, 0.726);
+    display: flex;
+    flex-direction: row;
+    padding: 30px 120px;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+.logo{
+    width: 200px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+.login-box h2{
+    margin-bottom: 20px;
+}
+.login-box button{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #999;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-box hr{
+    border: 0;
+    height: 1px;
+    margin: 5px;
+}
+.login-box span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    font-size: 14px;
+    margin-top: -16px
+}
+.login-box input{
+    width: 100%;
+    background: transparent;
+    border: 1p solid #999;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+::placeholder{
+    font-weight: 500;
+    color: #333;
+}
+.login-box form button{
+    background: #000;
+    color: #fff;
+    border: 0;
+    margin-bottom: 15px;
+}
+.login-box p{
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    margin: 40px 0 50px;
+}
+.login-box a{
+    text-decoration: none;
+    color: #258212;
+    font-weight: 600;
+}
+.sidebar{
+    background-color: rgba(86, 110, 134, 0.726);
+    color: rgb(223, 207, 207);
+    height: 100%;
+}
+.sidebar a{
+    margin-left: 10px;
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+}

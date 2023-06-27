@@ -1,0 +1,49 @@
+{% extends VouchersPage.html %}
+
+{% block content %}
+
+<h1>Orange Vouchers Page</h1>
+
+<hr>
+<h3>Vouchers</h3>
+<table>
+    <th>No</th><th>Detail</th><th>ID_no</th><th>Contact</th><th>Voucher</th><th>Uni_Hybrid/Data</th><th>Collected_by</th><th>ID_no</th><th>Sign</th><th>Date</th>
+    {% for voucher in vouchers %}
+    <tr>
+        <td>{{No}}</td><td>{{Detail}}</td><td>{{ID_no}}</td><td>{{Contact}}</td><td>{{Voucher}}</td><td>{{Uni_Hybrid}}</td><td>{{Collected_by}}</td><td>{{ID_no}}</td><td>{{Sign}}</td><td>{{Date}}</td>
+    <td><a href="{}">view</a></td><td>
+    </tr>
+    {% endfor %}
+</table>
+<hr>
+<a href="{}">
+    <button class="align-center">
+        Add New Voucher
+    </button>
+</a>
+<ul>
+    {%for voucher in vouchers%}
+          <div class="row g-4">
+            <div class="col-lg-4 col-sm-6">
+              <div class="vouchers">
+                <img src="images/AI.jpg" alt="Artificial Intelligence">
+                <div class="overlay">
+                  <div>
+                    <h4 class="text-white">Artificial Intelligence</h4>
+                  <div>
+                    <h6 class="text-white">tags here</h6>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <li><b><a href="{}">{{voucher.No}}</a>, belongs to: <i>{{voucher.Detail}}</i></b></li>
+    <br>
+    <p>{{voucher.Detail}}</p>
+    {%endfor%}
+    <a href="{}">Delete</a>
+    <br>
+    <a href="{}">Update</a>
+</ul>
+
+{% endblock content %}

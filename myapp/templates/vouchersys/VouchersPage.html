@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-AU-Compatible" content="IE-edge">
+        <title>BATLA ERP System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
+    </head>
+    <header>
+        {% include 'nav.html' %}
+    </header>
+    <div>
+        <h1>BATLA Cellphone Schemes</h1>
+    </div>
+    <div>
+    <br>
+    <body style="background-color:lightslategray;">
+        <div>
+            <p>If interested in applying for a cellphone Orange Voucher, dowload the pdf file below, fill it and utilize the submit button to turn in your submission.</p>
+            <a href="{% url 'pdf-view' %}"><button class="align-center">Download PDF</button></a>
+            <a href="{% url 'create-cell' %}"><button class="align-center">Submit here</button></a></a>
+        </div>
+    </body>
+    <br>
+
+    <footer>
+        {%include 'footer.html'%}
+    </footer>
+</div>
+</html>

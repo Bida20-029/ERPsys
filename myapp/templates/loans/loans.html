@@ -1,0 +1,22 @@
+<h1>This Batla's list of members that have taken Loans</h1>
+
+<hr>
+<h3>Loans</h3>
+<table>
+    <th>ID_No</th><th>Name</th><th>Surname</th><th>Contact</th><th>Postal_Address</th><th>Residential_Address</th>
+    <tr>
+        <td>{{ID_No}}</td><td>{{Name}}</td><td>{{Surname}}</td><td>{{Contact}}</td><td>{{Postal_Address}}</td><td>{{Residential_Address}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<hr>
+<a href="{% url create-member %}">
+    <button class="align-center">
+        Add New Member 
+    </button>
+<a href="{}">
+    <button class="align-center">
+        Delete Member
+    </button>
+</a>
+</a>

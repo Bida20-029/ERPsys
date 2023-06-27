@@ -1,0 +1,33 @@
+VoucherID,PaidTo,PreparedBy,FundsUseBreakdown,AmountInWowrds,Amount,Date_
+1,Mpho Tomeletso,1,Airtime Refund,Two Hundred And Forty-Five Pula,245,20/01/2023
+2,Baratwi Modibetsane,1,Salary,Twenty One Thousand And Seventy Eight Pula,21078,26/01/2023
+3,PULA Member Aid,1,Member Aid,One Thousand Five Hundred And Seventy Pula,1570,26/01/2023
+4,Water Solution Mining,1,Hire,Five Thousand Four Hundred And Seventy Eight Pula,5478,26/01/2023
+5,Orange Botswana,1,Cellphone And Laptop Contract,Fifty Three Thousand Eight Hundred And Sixty Seven,53867,26/01/2023
+6,Onkabetse Rebatshabile,1,Airtime Refund,Five Hundred And Fifty Five Pula,555,26/01/2023
+7,Ineeleng Lekgetho,1,Airtime Refund,Seven Hundred And Thirty Five Pula,735,26/01/2023
+8,Gaone Dimakatso,2,Salary,Twelve Thousand Nine Hundred And Fifty Five Pula Twenty Five Thebe,12955,26/01/2023
+9,Gaone Dimakatso,2,Petty Cash,Three Thousand Pula,3000,26/01/2023
+10,Baratwi Modibetsane,1,Travel Imprest,Four Thousand Nine Hundred And Sixty Four,5964,26/01/2023
+11,BURS,1,PAYE,Six Thousand Two Hundred And Thirty Three Pula Fifty Thebe,6233,26/01/2023
+12,Orange Botswana,1,Data(Cellphone And Laptop),Thirty Three Thousand Five Hundred And Eighty Three Pula Twenty Three Thebe,33583,01/02/2023
+13,Tebo Maswabi,1,Tea And Lunch,Two Thousand Five Hundred And Fifty Pula,2550,30/01/2023
+14,Kabo Goelekanye,1,Loan Refund,One Thousand Nine Hundred And Twenty Pula,1920,10/02/2023
+15,Tebogo Shobashoba,1,Loan Refund,One Thousand Two Hundred Pula,1200,10/02/2023
+16,Baratwi Modibetsane,1,Meal Refund,Four Hundred And Thirty Three,433,10/02/2023
+17,Orange Botswana,1,Airtime Crediting,Nine Hundred And Forty Six Pula Sixty Thebe,946,13/02/2023
+18,Monedi Motlhabi,1,Airtime Refund,Two Hundred And Fifteen Pula,215,14/02/2023
+19,Faith M Manele,1,Loan Refund,One Thousand Eight Hundred Pula,1800,14/02/2023
+20,Morekisi Keraamang,1,Loan Overpayment Refund,One Thousand Three Hundred And One Pula Eleven Thebe,1301,14/02/2023
+21,Nathaniel Motshabi,1,Investment Claim And Closure,Three Thousand Nine Hundred And Fifty Eight Pula Fifty Six Thebe,3958,15/02/2023
+22,Mag Le Pear PTY LTD,1,BATLA Suits,Seven Thousand Pula,7000,15/02/2023
+23,Leon Capital,1,Annuals,Eight Hundred And Fifty Pula,850,15/02/2023
+24,Baratwi Modibetsane,1,Salary,Twenty One Thousand And Seventy Eight Pula Seventy Five Thebe,21078,27/02/2023
+25,PULA Medical Aid,1,Medical Aid,One Thousand Five Hundred And Seventy Pula,1570,27/02/2023
+26,BOMAID,1,Medical Aid,One Thousand Three Hundred And Eighty Three Pula,1383,27/02/2023
+27,BURS,1,Taxes,Six Thousand Two Hundred And Thirty Three Pula Fifty Thebe,6233,27/02/2023
+28,Gaone Dimakatso,2,Salary,Twelve Thousand Nine Hundred And Fifty Five Pula Twenty Five Thebe,12955,02/03/2023
+29,Bridget Koontse,1,Casual Cleaning,Five Hundred And Sixty Eight Pula Twenty Five Thebe,568,28/02/2023
+30,NASHUA,1,Toners,Nineteen Thousand Seven Hundred And Sixty Eight Pula,19768,28/02/2023
+31,Water Solution Mining,1,Hire Purchase Scheme,Five Thousand And Forty Five Pula Seventy Two Thebe,5045,28/02/2023
+32,Aptec Computers,1,Purchase Of Laptops,Sixteen Thousand Eight Hundred,16800,03/03/2023

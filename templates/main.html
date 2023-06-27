@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="n0-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>          <html class="n0-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>          <html class="n0-js lt-ie9"> <![endif]-->
+<!--[if gt IE 7]>       <html class="n0-js"> <![endif]-->
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-AU-Compatible" content="IE-edge">
+        <title>BATLA ERP System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="static/styles/main.css">
+    </head>
+    <hr> 
+    <br> 
+    <header>
+        {% include 'nav.html' %}
+    </header>
+    <div class="container">
+    <section>
+    <body style="margin-left:25px; margin-right:25px;">
+        <!--[if lt IE ]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="a"> 
+        <![endif]-->
+
+        <h1>BATLA Internal System</h1>
+    </div>
+        <h3>BATLA Memberships</h3>
+        
+        <p>... to apply for BATLA membership, its as easy as clicking the link below.</p>
+        <a href="{% url 'pdf-member' %}"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-member' %}"><button class="align-center">Submit here</button></a>
+        <br>
+        <h3>BATLA Orange Cellphone Schemes</h3>
+
+        <p>to apply for a voucher from BATLA, click the link below</p>
+        <a href="{% url 'pdf-view' %}"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-voucher' %}"><button class="align-center">Submit here</button></a></a>
+        <br>
+        <h3>BATLA Short Loan Schemes</h3>
+        
+        <p>... to apply for a short loan, click the link below</p>
+        <a href="{% url 'pdf-loan' %}"><button class="align-center">Download PDF</button></a>
+        <a href="{% url 'create-loan' %}"><button class="align-center">Submit here</button></a>
+        <br>
+
+        <script src="" async defer></script>
+    </section>
+</div>
+</body>
+    <br>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+</html>

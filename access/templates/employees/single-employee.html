@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>{{employee.Name}}</h1><h1>{{emloyee.Surname}}</h1>
+<br>
+<p>
+    Leave days : {{employee.leavedays}}
+    <br>
+    Other Deductions : {{employee.otherdeductions}}
+    <br>
+    Total Deductions : {{employee.totaldeductions}}
+    <br>
+    Emloyee Salary : {{employee.salary}}
+</p>
+
+{% endblock content %}

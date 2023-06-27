@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Petty ID</th>
+            <th>Date</th>
+            <th>Cash Used For</th>
+            <th>Filled in by</th>
+            <th>Petty Cash Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for payment in payment %}
+        <tr>
+            <td>{{ Petty_ID }}</td>
+            <td>{{ Date }}</td>
+            <td>{{ Cash_Used_For }}</td>
+            <td>{{ Filled_In_By }}</td>
+            <td>{{ Petty_Cash_Used }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

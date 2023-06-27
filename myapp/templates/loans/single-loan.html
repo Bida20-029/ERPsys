@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>{{loan.Name}}</h1><h1>{{loan.Surname}}</h1>
+<br>
+<p>
+    {{loan.Duration}}
+    {{loan.LandBoard}}
+    {{loan.Principal}}
+    {{loan.START}}
+    {{loan.END}}
+</p>
+
+{% endblock content %}
