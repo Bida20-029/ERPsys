@@ -324,8 +324,8 @@
                 <div class="image"><img src="static/images/logo.png" class="logo"></div>
                 <ol class="menuitems">
                     <li></li><a href="{{ url_for('myapp:home') }}">Home</a></li>
-                    <li><a href="{% url 'myapp:loginPage' %}">BATLA Member Login</a></li>
-                    <li><a href="{% url 'myapp:registerPage' %}">BATLA Member SignUp</a></li>
+                    <li><a href="{{ url_for('myapp:loginhome/') }}">BATLA Member Login</a></li>
+                    <li><a href="{{ url_for('myapp:registerPage') }}">BATLA Member SignUp</a></li>
                 </ol>
             </div>
         </section>
